@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Relay · Operator</title>
+    <link rel="icon" href="/icon.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/admin.css" />
+    <script src="/admin.js" type="module"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">relay.</a>
+      <div class="header-end">
+        <span id="operator-label">Operator console</span
+        ><button id="admin-language" class="language-button">فارسی</button>
+      </div>
+    </header>
+    <main class="admin-main">
+      <div class="admin-heading">
+        <div>
+          <div class="eyebrow" id="system-label">SYSTEM OVERVIEW</div>
+          <h1 id="streams-label">Live streams</h1>
+        </div>
+        <button id="refresh" class="primary-button">Refresh</button>
+      </div>
+      <p id="admin-error" role="alert" hidden></p>
+      <div id="metrics" class="metrics"></div>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr id="table-head"></tr>
+          </thead>
+          <tbody id="streams"></tbody>
+        </table>
+      </div>
+      <h2 id="logs-label">Recent activity</h2>
+      <pre id="logs" dir="ltr"></pre>
+    </main>
+  </body>
+</html>
